@@ -1,0 +1,166 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Логотип*/
+header{
+  background: #222222;
+padding: 8px 0;
+}
+.top_wrap{
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+.top_wrap > div{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 80%;
+  margin: 0 auto;
+ /* border: 1px solid white;*/
+} 
+.top_wrap .description{
+  flex-basis: 40%;
+  color: #a9abaa;
+  font-size: 13px;
+ /* border: 1px solid white;*/
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+ /* border: 1px solid black;*/
+}
+/*Меню*/
+.menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #dfdfdfdf;
+}
+.menu nav > ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+}
+.menu nav > ul li{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 20px 0 0;
+  position: relative;
+
+}
+.menu nav>ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.25vw;
+}
+.menu nav > ul li:hover .submenu{
+  display: block;
+}
+/*Выподающее меню*/
+.menu .submenu{
+  display: none;
+  position: absolute;
+  background: rgba(0,0,0, 0.9);
+  width: 200px;
+  padding: 10px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0,0,0, 0.5);
+  top: 40px;
+
+}
+.menu nav>ul li{
+  padding: 5px;
+}
+.menu .submenu li a{
+  color: white;
+}
+
+.menu .submenu li a:hover{
+  text-decoration: underline;
+}
+.menu form input{
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  outline: 0;
+  padding: 5px;
+}
+.menu form button{
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.menu img{
+  position: absolute;
+  right: 20px;
+  bottom: -5px;
+}
+/*Соц.иконки*/
+.soc_icons p{
+  font-size: 14px;
+  color: #757575;
+}
+.soc_icons a{
+  color: #00a1ad;
+  margin: 3px;
+}
+/*Баннер со слайдером*/
+.banner .slider{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.banner .slider .arrow_left{
+  background: url(../image/alb.png) no-repeat center center;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+.banner .slider .arrow_right {
+  background: url(../image/arb.png) no-repeat center center;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.banner .slider .photo{
+  height: 450px;
+  flex-basis: 100%;
+  background: url(../image/slider.jpg) no-repeat center bottom/cover;
+}
+.banner .slider .photo p{
+  color: white;
+  background: rgba(0,0,0, 0.7);
+  display: inline-block;
+  position: absolute;
+  padding: 10px;
+  left: 20px;
+  bottom: 10px;
+  font-size: 20px;
+}
+.slider_swith{
+ /* border: 1px solid;*/
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider_swith span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 2px solid #278a87;
+  cursor: pointer;
+}
+.slider_swith .active {
+ background: #efc01a;
+}

@@ -294,3 +294,105 @@ cursor: pointer;
 .pagination span:hover{
   background: #8dca3e;
 }
+/*Галереия*/
+.gallery h2{
+border-left: 3px solid #83b85c;
+padding-left: 5px;
+font-weight: normal;
+width: 80%;
+margin: 40px auto 20px ;
+}
+.gallery .slider{
+  display: flex;
+  /*выравнивание по горизнтали*/
+  justify-content: center;
+  /*выравниваени по вертикали*/
+  align-items: center;
+  background: #d9d9d7;
+  padding:  5px 0 3px;
+}
+.gallery .slider .arrow_left{
+background: url("../image/arrow_left.png") no-repeat center center;
+width: 48px;
+height: 48px;
+cursor: pointer;
+}
+
+.gallery .slider .arrow_right {
+  background: url("../image/arrow_right.png") no-repeat center center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+footer{
+  margin-top: 20px;
+}
+footer nav{
+  background: #09adb9;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60%;
+ 
+  height: 100%;
+  padding: 0;
+
+}
+footer nav ul >li{
+  list-style: none;
+
+  height: 100%;
+  flex-basis: 100%;
+}
+footer nav ul li a{
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer nav ul li a:hover{
+  background: #128991;
+}
+footer .titles{
+  background: #272727;
+  padding: 10px 0;
+}
+footer .titles .links{
+  width: 60%;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer .titles .links div{
+  background: #3e3e3e; 
+  padding: 10px 0;
+  flex-basis: 40%;
+  text-align: center;
+}
+.links a{
+  color: #dedede;
+  text-decoration: 0;
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+.links a:hove{
+  text-decoration: underline;
+}
+.links a::before{
+  content: "\00BB";
+  margin-right: 10px;
+  color: #8cc34c;
+}
+footer p{
+  text-align: center;
+}
